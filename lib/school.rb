@@ -1,11 +1,9 @@
 class School
   attr_accessor :name, :roster
-  @@all = []
 
   def initialize(name)
     @name = name
     @roster = {}
-    @@all << self
   end
 
   def add_student(student, grade)
