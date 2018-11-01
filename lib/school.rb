@@ -11,9 +11,9 @@ class School
     @roster[grade] << student
   end
 
-	def grade(grade)
-		@roster[grade]
-	end
+  def grade(grade)
+     @roster[grade]
+  end
 
   def sort
     @roster.each {|grade, names| @roster[grade] = names.sort}
